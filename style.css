@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.intro {
+    display: flex;
+    color: white;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/img.jpg);
+    background-size: cover;
+}
+
+.typing {
+    position: relative;
+    color: orange;
+    margin-left: 10px;
+}
+
+.typing::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 5%;
+    border-right: 2px solid #fff;
+    top: 5px;
+    right: -5px;
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
